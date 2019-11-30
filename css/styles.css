@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Franklin Gothik Book";
+  src: url("../css/fonts/franklin-gothic-book.ttf")  format("truetype");
+}
+
+@font-face {
+  font-family: "Angsana New";
+  src: url("../css/fonts/angsa.ttf")  format("truetype");
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothik Book", Times, serif;
+}
+
+body{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #005883;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.2rem 0 0.3rem;
+}
+
+header h1 {
+  color: #b3b3b3;
+  padding: 1rem;
+}
+
+header img{
+  height: 70px;
+  margin-bottom: -3px;
+  width: auto;
+}
+
+
+nav {
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul a {
+  background-color: #F0B429;
+  color: #005883;
+  display: block;
+  padding: 0.7rem 2rem;
+  text-decoration: none;
+}
+
+nav .nav > li {
+  float: left;
+  width: 20%;
+}
+
+nav .nav li ul {
+  display: none;
+  position: absolute;
+  width: 12rem;
+}
+
+nav .nav li:hover > ul {
+  display: block;
+}
+
+nav .nav li a:hover {
+  background-color: #005883;
+  color: #b3b3b3;
+}
+
+main {
+  align-items:stretch;
+  display: flex;
+  font-family: "Angsana New", Times, serif;
+  min-height: 500px;
+  width: 100%;
+}
+
+main section {
+  background-color: #dedede;
+  color: #005883;
+  padding: 2rem;
+  width: 80%;
+}
+
+main section article {
+  margin-bottom: 2rem;
+}
+
+main section article figure {
+  justify-content: space-between;
+  display: flex;
+}
+
+main section article figure img {
+  background-color: #fefefe;
+  border-radius: 0.3rem;
+  padding: 0.7rem;
+  width: 10rem;
+}
+
+main section img {
+  height: 10rem;
+}
+
+main aside {
+  color: #fefefe;
+  max-height: 500px;
+  overflow: auto;
+  width: 20%;
+}
+
+footer {
+  background-color: #005883;
+  direction: ltr;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 80px;
+  width: 100%;
+}
+
+footer img {
+  justify-items: right;
+}
